@@ -1,2 +1,0 @@
-Placeholder for fields-logo.png (green fields).
-Replace this file with the actual PNG named `fields-logo.png` (from your attachments).

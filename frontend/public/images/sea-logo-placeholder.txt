@@ -1,2 +1,0 @@
-Placeholder for sea-logo.png (blue wave).
-Replace this file with the actual PNG named `sea-logo.png` (from your attachments).
