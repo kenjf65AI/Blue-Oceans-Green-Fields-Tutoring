@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { useState } from 'react'
 import {
   Sparkles,
@@ -40,18 +39,18 @@ export default function Home() {
             <div className="flex items-center gap-2 text-2xl font-bold text-primary-600">
               <Sparkles className="w-8 h-8" />
               <span>Blue Oceans & Green Fields</span>
-              <Image
+              <img
                 src="/images/sea-logo.png"
                 alt="Blue Ocean"
-                width={32}
-                height={32}
+                width="32"
+                height="32"
                 className="ml-2"
               />
-              <Image
+              <img
                 src="/images/fields-logo.png"
                 alt="Green Fields"
-                width={32}
-                height={32}
+                width="32"
+                height="32"
                 className="ml-1"
               />
             </div>
