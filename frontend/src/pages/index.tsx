@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { useState } from 'react'
 import {
   Sparkles,
@@ -33,25 +32,38 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
+      <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50 relative">
+        {/* Background Image with Opacity */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage: 'url(/images/WavesBKGD.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            opacity: 0.6,
+            zIndex: 0
+          }}
+        />
+        <div className="relative z-10">
         {/* Navigation */}
         <nav className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2 text-2xl font-bold text-primary-600">
               <Sparkles className="w-8 h-8" />
               <span>Blue Oceans & Green Fields</span>
-              <Image
+              <img
                 src="/images/sea-logo.png"
                 alt="Blue Ocean"
-                width={32}
-                height={32}
+                width="32"
+                height="32"
                 className="ml-2"
               />
-              <Image
+              <img
                 src="/images/fields-logo.png"
                 alt="Green Fields"
-                width={32}
-                height={32}
+                width="32"
+                height="32"
                 className="ml-1"
               />
             </div>
@@ -276,6 +288,7 @@ export default function Home() {
             </div>
           </div>
         </footer>
+        </div>
       </main>
     </>
   )
