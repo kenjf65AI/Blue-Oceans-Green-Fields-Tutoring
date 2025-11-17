@@ -32,7 +32,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
+      <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50 relative">
+        {/* Background Image with Opacity */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage: 'url(/images/WavesBKGD.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            opacity: 0.6,
+            zIndex: 0
+          }}
+        />
+        <div className="relative z-10">
         {/* Navigation */}
         <nav className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
@@ -275,6 +288,7 @@ export default function Home() {
             </div>
           </div>
         </footer>
+        </div>
       </main>
     </>
   )
