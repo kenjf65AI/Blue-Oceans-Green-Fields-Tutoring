@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import {
   BookOpen,
   Calendar,
@@ -42,7 +43,23 @@ export default function Dashboard() {
       {/* Header */}
       <header className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-6 py-4">
-          <h1 className="text-2xl font-bold text-gray-900">My Learning Dashboard</h1>
+          <h1 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
+            My Learning Dashboard
+            <Image
+              src="/images/sea-logo.png"
+              alt="Blue Ocean"
+              width={32}
+              height={32}
+              className="ml-2"
+            />
+            <Image
+              src="/images/fields-logo.png"
+              alt="Green Fields"
+              width={32}
+              height={32}
+              className="ml-1"
+            />
+          </h1>
         </div>
       </header>
 
