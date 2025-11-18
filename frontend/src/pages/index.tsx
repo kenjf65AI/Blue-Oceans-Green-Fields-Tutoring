@@ -38,7 +38,7 @@ export default function Home() {
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: 'url(/images/WavesBKGD.png)',
-            backgroundSize: '150%',
+            backgroundSize: '200%',
             backgroundPosition: 'center',
             backgroundRepeat: 'repeat',
             opacity: 0.6,
